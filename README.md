@@ -5,6 +5,16 @@ This package is as an extension of the [Elm Actor Framework](https://github.com/
 It supplies an uniform method of creating Templates for the Actor Model
 environment supplied by the Elm Actor Framework
 
+```elm
+
+    Text "some test"
+
+    Element "strong" [] [ Text "Hello World" ]
+
+    Actor <| ActorElement Counter "comp-counter" "counter-1" [] []
+
+```
+
 ## Templates
 
 Actors make up ideal components that can be used on a template.
