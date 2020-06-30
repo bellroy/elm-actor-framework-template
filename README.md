@@ -1,14 +1,26 @@
 # Elm Actor Framework - Template
 
-This package is meant as an extension of the [Elm Actor Framework](https://github.com/tricycle/elm-actor-framework)
-[Package](https://package.elm-lang.org/packages/tricycle/elm-actor-framework/latest).
-Although it has no dependencies on it.
+This package is as an extension of the [Elm Actor Framework](https://github.com/tricycle/elm-actor-framework) [Package](https://package.elm-lang.org/packages/tricycle/elm-actor-framework/latest).
 
-It supplies an uniform method of creating Templates for an Actor Model
-environment.
+It supplies an uniform method of creating Templates for the Actor Model
+environment supplied by the Elm Actor Framework
 
 ## Templates
 
-You can consider your Actors as reusable components and on its own it's a
-powerful pattern. Since they can be so small and tangible they are easy to use
-on templates perhaps enriching your formatting or adding functionality to them.
+Actors make up ideal components that can be used on a template.
+
+This module provides a shared type system for different template inputs and
+outputs. Currently this package is used by;
+
+- [Elm Actor Framework - Templates - Html](https://github.com/tricycle/elm-actor-framework-template-html)
+  - [Demo](https://tricycle.github.io/elm-actor-framework-html)
+  - **Parse** Html Template (Using [`hecrj/html-parser`](https://github.com/hecrj/html-parser))
+  - **Render** Html (Using [`elm/html`](https://github.com/elm/html))
+
+* [Elm Actor Framework - Templates - Markdown](https://github.com/tricycle/elm-actor-framework-template-markdown)
+  - **Parse** Markdown (Using [dillonkearns/elm-markdown](https://github.com/dillonkearns/elm-markdown))
+
+Without the listed additional template packages this module can still be used to
+supply a (custom) template foundation.
+
+The included `example` can be previewed online [here](https://tricycle.github.io/elm-actor-framework)

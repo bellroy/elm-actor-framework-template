@@ -1,7 +1,7 @@
 module Framework.Template exposing
     ( Node(..), ActorElement(..)
     , ElementNodeName, ActorElementId, Attributes, Attribute, Children
-    , getActorElementDescendants
+    , getActorElementDescendants, getActorsToSpawn
     , toString
     )
 
@@ -15,7 +15,7 @@ friendlier, format.
 
 @docs ElementNodeName, ActorElementId, Attributes, Attribute, Children
 
-@docs getActorElementDescendants
+@docs getActorElementDescendants, getActorsToSpawn
 
 @docs toString
 
@@ -129,3 +129,34 @@ getActorElementDescendants =
                     List.append list [ actorElement ]
         )
         []
+
+
+{-| Convenience function that returns a list containing records supplying the
+information usually required to spawn the target Actor
+-}
+getActorsToSpawn :
+    List (Node appActors)
+    ->
+        List
+            { actor : appActors
+            , reference : String
+            , actorElement : ActorElement appActors
+            }
+getActorsToSpawn =
+    getActorElementDescendants
+        >> List.map
+            (\((ActorElement actor _ id _ _) as actorElement) ->
+                { actor = actor
+                , reference = id
+                , actorElement = actorElement
+                }
+            )
+        >> List.foldl
+            (\tuple result ->
+                if List.member tuple result then
+                    result
+
+                else
+                    tuple :: result
+            )
+            []
