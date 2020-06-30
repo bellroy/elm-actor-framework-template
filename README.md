@@ -60,4 +60,4 @@ template =
     ]
 ```
 
-The included `example` can be previewed online [here](https://tricycle.github.io/elm-actor-framework)
+The included `example` can be previewed online [here](https://tricycle.github.io/elm-actor-framework-template)
