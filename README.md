@@ -1,6 +1,6 @@
 # Elm Actor Framework - Template
 
-![Build Status](https://github.com/tricycle/elm-actor-framework-template/workflows/Continuous%20Integration/badge.svg) [![Elm package](https://img.shields.io/elm-package/v/tricycle/elm-actor-framework-template.svg)](https://package.elm-lang.org/packages/elm-actor-framework-template/latest/)
+![Build Status](https://github.com/tricycle/elm-actor-framework-template/workflows/Continuous%20Integration/badge.svg) [![Elm package](https://img.shields.io/elm-package/v/tricycle/elm-actor-framework-template.svg)](https://package.elm-lang.org/packages/tricycle/elm-actor-framework-template/latest/)
 
 This package is as an extension of the [Elm Actor Framework](https://github.com/tricycle/elm-actor-framework) [Package](https://package.elm-lang.org/packages/tricycle/elm-actor-framework/latest).
 
