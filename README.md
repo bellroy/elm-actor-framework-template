@@ -1,5 +1,7 @@
 # Elm Actor Framework - Template
 
+![Build Status](https://github.com/tricycle/elm-actor-framework-template/workflows/Continuous%20Integration/badge.svg) [![Elm package](https://img.shields.io/elm-package/v/tricycle/elm-actor-framework-template.svg)](https://package.elm-lang.org/packages/elm-actor-framework-template/latest/)
+
 This package is as an extension of the [Elm Actor Framework](https://github.com/tricycle/elm-actor-framework) [Package](https://package.elm-lang.org/packages/tricycle/elm-actor-framework/latest).
 
 It supplies an uniform method of creating Templates for the Actor Model
@@ -7,7 +9,7 @@ environment supplied by the Elm Actor Framework
 
 ```elm
 
-    Text "some test"
+    Text "some text"
 
     Element "strong" [] [ Text "Hello World" ]
 
@@ -36,6 +38,8 @@ Without the listed additional template packages this module can still be used to
 supply a (custom) template foundation.
 
 ## Demo
+
+The Demo/Example uses the following template to render Html and the listed Actors.
 
 ```elm
 template : List (Node Actors)
