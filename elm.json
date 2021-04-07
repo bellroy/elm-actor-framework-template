@@ -1,6 +1,6 @@
 {
   "type": "package",
-  "name": "tricycle/elm-actor-framework-template",
+  "name": "bellroy/elm-actor-framework-template",
   "summary": "Adds an easy way to handle templates using the elm-actor-framework template",
   "license": "BSD-3-Clause",
   "version": "1.0.0",
